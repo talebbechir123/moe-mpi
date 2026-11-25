@@ -15,6 +15,9 @@ for path in runs:
     tok_per_step = a["batch"] * a["ctx"] * d["ranks"] * a["layers"]
     lab = path.split("/")[-1].replace(".json", "")
     ax[0, 0].plot(s, loss, alpha=.25); ax[0, 0].plot(s[k - 1:], smooth, label=lab)
+    if d.get("val"):
+        ax[0, 0].plot([v["step"] for v in d["val"]], [v["val_loss"] for v in d["val"]],
+                      "o--", ms=4, label=f"{lab} validation")
     ax[0, 1].plot(s, [100 * r["dropped"] / tok_per_step for r in log], label=lab)
     ax[1, 0].plot(s, [r["imbalance"] for r in log], label=lab)
     ax[1, 1].plot(s, [r["a2a_pct"] for r in log], label=f"{lab} all-to-all")
