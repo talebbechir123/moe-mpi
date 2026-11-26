@@ -1,0 +1,34 @@
+vocab=4096 training tokens=13,139,825
+validation tokens=5,638,544
+mode=ep ranks=2 experts=8 params/rank: shared=3,195,392 experts=8,388,608
+{'step': 500, 'val_loss': 3.2686}
+{'step': 500, 'loss': 3.1551, 'tok_s': 985, 'a2a_pct': 10.3, 'allreduce_pct': 1.8, 'imbalance': 1.18, 'dropped': 675}
+{'step': 1000, 'val_loss': 2.7661}
+{'step': 1000, 'loss': 2.8521, 'tok_s': 849, 'a2a_pct': 12.8, 'allreduce_pct': 1.7, 'imbalance': 1.12, 'dropped': 617}
+{'step': 1500, 'val_loss': 2.5486}
+{'step': 1500, 'loss': 2.6292, 'tok_s': 4455, 'a2a_pct': 3.6, 'allreduce_pct': 1.3, 'imbalance': 1.11, 'dropped': 551}
+{'step': 2000, 'val_loss': 2.4035}
+{'step': 2000, 'loss': 2.5377, 'tok_s': 4461, 'a2a_pct': 3.3, 'allreduce_pct': 1.1, 'imbalance': 1.11, 'dropped': 457}
+{'step': 2500, 'val_loss': 2.3052}
+{'step': 2500, 'loss': 2.2013, 'tok_s': 3549, 'a2a_pct': 7.8, 'allreduce_pct': 1.9, 'imbalance': 1.1, 'dropped': 253}
+{'step': 3000, 'val_loss': 2.2311}
+{'step': 3000, 'loss': 2.1806, 'tok_s': 4487, 'a2a_pct': 1.6, 'allreduce_pct': 1.0, 'imbalance': 1.12, 'dropped': 302}
+{'step': 3500, 'val_loss': 2.1709}
+{'step': 3500, 'loss': 2.2493, 'tok_s': 4438, 'a2a_pct': 1.2, 'allreduce_pct': 1.0, 'imbalance': 1.13, 'dropped': 362}
+{'step': 4000, 'val_loss': 2.1284}
+{'step': 4000, 'loss': 1.9973, 'tok_s': 4405, 'a2a_pct': 4.5, 'allreduce_pct': 1.2, 'imbalance': 1.13, 'dropped': 190}
+{'step': 4500, 'val_loss': 2.0893}
+{'step': 4500, 'loss': 2.1644, 'tok_s': 4488, 'a2a_pct': 1.6, 'allreduce_pct': 0.9, 'imbalance': 1.13, 'dropped': 176}
+{'step': 5000, 'val_loss': 2.0589}
+{'step': 5000, 'loss': 1.9098, 'tok_s': 4483, 'a2a_pct': 1.7, 'allreduce_pct': 1.0, 'imbalance': 1.07, 'dropped': 47}
+
+--- sample ---
+Once upon a time, there was a little bee named Buzz. Buzz loved to eat nuts. One day, Buzz saw a big tree and decided to rest on it.
+As Buzz hopped onto the tree, he met a small bird named Lulu. Lulu was very good at finding nuts, like the big red bird. Chirpy wanted to help Tiny.
+Betty thought of a magic carrot. They could use the big red fruit to scare it away.
+Remy and Lulu found a big stick. They found a stick and tried to get it for Tiny. They took turns and wanted to make the stick strong again. Tiny, Lulu, and Benny flew up high in the sky, and the small stick became the best leaf. Now Tiny and Lulu knew what to do the best thing to do.
+
+Once upon a time, there was a big, red apple. In the apple tree, there was a big, brown turkey. The turkey liked to eat the apple.
+One day, a little
+--------------
+total all-to-all volume: 333510.2 MB
